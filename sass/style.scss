@@ -31,14 +31,12 @@ nav {
 .home {
   font-family: Poppins;
   font-style: normal;
-
   margin-top: 48px;
 
-  .head,
-  .description {
-    width: 80%;
-    margin: auto;
-  }
+  display: grid;
+  grid-template-columns: 1fr 80% 1fr;
+  grid-template-rows: repeat (auto, 1fr);
+  justify-content: center;
 
   a {
     text-decoration: none;
@@ -47,6 +45,8 @@ nav {
     font-size: 12px;
     line-height: 18px;
     color: #2d9cdb;
+
+    grid-column: 2;
   }
 
   h2 {
@@ -54,79 +54,81 @@ nav {
     font-size: 24px;
     line-height: 36px;
     color: #333333;
+
+    grid-column: 2;
   }
 
   img {
     margin-top: 15px;
-
     width: 100%;
     border-radius: 15px;
     background-size: cover;
+
+    grid-column: 1 / 4;
   }
 
-  .description {
-    h2 {
-      margin-top: 22px;
-      width: 80%;
+  h2:nth-child(4) {
+    margin-top: 22px;
+    grid-column: 2;
+  }
+
+  p {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #4f4f4f;
+    margin-top: 33px;
+
+    grid-column: 2;
+  }
+
+  form {
+    margin-top: 31px;
+    grid-column: 2;
+
+    label {
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 15px;
+      color: #828282;
     }
 
-    p {
-      font-weight: normal;
-      font-size: 12px;
-      line-height: 18px;
-      color: #4f4f4f;
+    .input {
+      $inputHeight: 47px;
+      $inputBG: #f2f2f2;
+      display: flex;
 
-      margin-top: 33px;
-    }
+      input {
+        width: 70%;
+        font-size: 14px;
+        line-height: 21px;
+        color: #bdbdbd;
+        padding: 15px 19px;
 
-    form {
-      margin-top: 31px;
-
-      label {
-        font-weight: 500;
-        font-size: 10px;
-        line-height: 15px;
-        color: #828282;
+        border-radius: 12px 0 0 12px;
+        height: $inputHeight;
+        background-color: $inputBG;
+        border: 1px solid $inputBG;
       }
 
-      .input {
-        $inputHeight: 47px;
-        $inputBG: #f2f2f2;
+      .button {
+        background-color: $inputBG;
+        height: $inputHeight;
         display: flex;
+        border-radius: 0 12px 12px 0;
 
-        input {
+        button {
           font-size: 14px;
-          line-height: 21px;
-          color: #bdbdbd;
-          padding: 15px 19px;
+          line-height: 39px;
+          color: $inputBG;
+          margin-right: 4px;
+          margin-block: auto;
 
-          border-radius: 12px 0 0 12px;
-          height: $inputHeight;
-          background-color: $inputBG;
-          border: 1px solid $inputBG;
-
-          width: 70%;
-        }
-
-        .button {
-          background-color: $inputBG;
-          height: $inputHeight;
-          display: flex;
-          border-radius: 0 12px 12px 0;
-
-          button {
-            font-size: 14px;
-            line-height: 39px;
-            color: $inputBG;
-            margin-right: 4px;
-            margin-block: auto;
-
-            background: #2d9cdb;
-            border-radius: 12px;
-            border: 1px solid #2d9cdb;
-            height: 39px;
-            width: 71px;
-          }
+          background: #2d9cdb;
+          border-radius: 12px;
+          border: 1px solid #2d9cdb;
+          height: 39px;
+          width: 71px;
         }
       }
     }
