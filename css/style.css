@@ -29,10 +29,20 @@ nav h1 {
   color: #333333;
 }
 
+nav span {
+  cursor: pointer;
+}
+
 .home {
   font-family: Poppins;
   font-style: normal;
   margin-top: 48px;
+}
+
+.home .head,
+.home .description {
+  width: 80%;
+  margin: auto;
 }
 
 .home a {
@@ -53,17 +63,17 @@ nav h1 {
 
 .home img {
   margin-top: 15px;
-  width: 348px;
-  height: 145px;
-  border-radius: 18px;
+  width: 100%;
+  border-radius: 15px;
   background-size: cover;
 }
 
-.home h2:nth-child(4) {
+.home .description h2 {
   margin-top: 22px;
+  width: 80%;
 }
 
-.home p {
+.home .description p {
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
@@ -71,24 +81,24 @@ nav h1 {
   margin-top: 33px;
 }
 
-.home form {
+.home .description form {
   margin-top: 31px;
 }
 
-.home form label {
+.home .description form label {
   font-weight: 500;
   font-size: 10px;
   line-height: 15px;
   color: #828282;
 }
 
-.home form .input {
+.home .description form .input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.home form .input input {
+.home .description form .input input {
   font-size: 14px;
   line-height: 21px;
   color: #bdbdbd;
@@ -97,9 +107,10 @@ nav h1 {
   height: 47px;
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
+  width: 70%;
 }
 
-.home form .input .button {
+.home .description form .input .button {
   background-color: #f2f2f2;
   height: 47px;
   display: -webkit-box;
@@ -108,7 +119,7 @@ nav h1 {
   border-radius: 0 12px 12px 0;
 }
 
-.home form .input .button button {
+.home .description form .input .button button {
   font-size: 14px;
   line-height: 39px;
   color: #f2f2f2;
@@ -119,5 +130,30 @@ nav h1 {
   border: 1px solid #2d9cdb;
   height: 39px;
   width: 71px;
+}
+
+.service {
+  font-family: Poppins;
+  font-style: normal;
+  margin-top: 106px;
+}
+
+.service h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}
+
+.service .cards {
+  margin-top: 92px;
+}
+
+.service .cards .card span {
+  color: #ffff;
+  background-color: #2d9cdb;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 30px;
 }
 /*# sourceMappingURL=style.css.map */
