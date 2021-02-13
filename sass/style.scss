@@ -27,8 +27,11 @@ nav {
 .home {
   font-family: Poppins;
   font-style: normal;
-
   margin-top: 48px;
+
+  display: grid;
+  grid-template-columns: 1fr 80% 1fr;
+  justify-content: center;
 
   a {
     text-decoration: none;
@@ -37,6 +40,8 @@ nav {
     font-size: 12px;
     line-height: 18px;
     color: #2d9cdb;
+
+    grid-column: 2;
   }
 
   h2 {
@@ -44,19 +49,22 @@ nav {
     font-size: 24px;
     line-height: 36px;
     color: #333333;
+
+    grid-column: 2;
   }
 
   img {
     margin-top: 15px;
-
-    width: 348px;
-    height: 145px;
+    width: 100%;
     border-radius: 18px;
     background-size: cover;
+
+    grid-column: 1 / 4;
   }
 
   h2:nth-child(4) {
     margin-top: 22px;
+    grid-column: 2;
   }
 
   p {
@@ -64,12 +72,15 @@ nav {
     font-size: 12px;
     line-height: 18px;
     color: #4f4f4f;
-
     margin-top: 33px;
+
+    grid-column: 2;
   }
 
   form {
     margin-top: 31px;
+
+    grid-column: 2;
 
     label {
       font-weight: 500;
@@ -84,6 +95,7 @@ nav {
       display: flex;
 
       input {
+        width: 70%;
         font-size: 14px;
         line-height: 21px;
         color: #bdbdbd;
