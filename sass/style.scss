@@ -222,6 +222,7 @@ nav {
 
 .our-works {
   margin-top: 100px;
+  margin-bottom: 100px;
   font-family: Poppins;
   font-style: normal;
 
@@ -259,6 +260,130 @@ nav {
         line-height: 27px;
         color: #333333;
       }
+    }
+  }
+
+  a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2d9cdb;
+    text-decoration: none;
+
+    span {
+      vertical-align: middle;
+      margin-right: 12px;
+    }
+  }
+}
+
+.team {
+  font-family: Poppins;
+  font-style: normal;
+  a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #eb5757;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    color: #333333;
+    width: 80%;
+  }
+
+  p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4f4f4f;
+    width: 80%;
+  }
+
+  .pict {
+    margin-top: 36px;
+    display: grid;
+    grid-gap: 9px;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+
+    img {
+      width: 100%;
+      border-radius: 24px;
+    }
+
+    img:nth-child(1) {
+      grid-column: 1;
+      grid-row: 1 / -1;
+    }
+    img:nth-child(2),
+    img:nth-child(3) {
+      grid-column: 2;
+    }
+
+    img:nth-child(2) {
+      grid-row: 1;
+    }
+
+    img:nth-child(3) {
+      grid-row: 2;
+    }
+  }
+}
+
+.clients {
+  margin-bottom: 100px;
+  margin-top: 100.3px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+
+  q {
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+  }
+
+  .client {
+    margin-top: 31px;
+    display: grid;
+    grid-template-columns: 3.3fr 9fr;
+    grid-template-rows: repeat (2, 1fr);
+    column-gap: 30px;
+    row-gap: 12px;
+
+    align-items: center;
+
+    img {
+      width: 100%;
+      background: #c4c4c4;
+      border-radius: 12px;
+
+      grid-column: 1;
+      grid-row: 1 / 3;
+    }
+
+    h3 {
+      font-size: 24px;
+      line-height: 36px;
+      color: #333333;
+
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 27px;
+      color: #828282;
+
+      grid-column: 2;
+      grid-row: 2;
     }
   }
 }
