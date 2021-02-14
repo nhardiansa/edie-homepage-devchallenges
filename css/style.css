@@ -136,6 +136,7 @@ nav span {
 }
 
 .home form .input .button button {
+  cursor: pointer;
   font-size: 14px;
   line-height: 39px;
   color: #f2f2f2;
@@ -159,6 +160,8 @@ nav span {
   font-size: 24px;
   line-height: 36px;
   color: #333333;
+  width: 75%;
+  margin: auto;
 }
 
 .service .cards {
@@ -177,10 +180,21 @@ nav span {
 
 .service .cards .card span {
   color: #ffff;
-  background-color: #2d9cdb;
   padding: 15px;
   border-radius: 12px;
   font-size: 30px;
+}
+
+.service .cards .card span.create {
+  background-color: #2d9cdb;
+}
+
+.service .cards .card span.code {
+  background-color: #27ae60;
+}
+
+.service .cards .card span.storage {
+  background-color: #eb5757;
 }
 
 .service .cards .card h3 {
@@ -215,5 +229,48 @@ nav span {
 .service .cards .card button:hover {
   background-color: #2d9cdb;
   color: #ffff;
+}
+
+.our-works {
+  margin-top: 100px;
+  font-family: Poppins;
+  font-style: normal;
+}
+
+.our-works h2 {
+  margin: auto;
+  width: 80%;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}
+
+.our-works .products {
+  margin-top: 48px;
+}
+
+.our-works .products .product {
+  margin-bottom: 36px;
+}
+
+.our-works .products .product img {
+  width: 100%;
+  border-radius: 24px;
+}
+
+.our-works .products .product p {
+  margin-top: 12px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: #828282;
+}
+
+.our-works .products .product h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #333333;
 }
 /*# sourceMappingURL=style.css.map */

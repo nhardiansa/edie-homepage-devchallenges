@@ -119,6 +119,7 @@ nav {
         border-radius: 0 12px 12px 0;
 
         button {
+          cursor: pointer;
           font-size: 14px;
           line-height: 39px;
           color: $inputBG;
@@ -147,6 +148,8 @@ nav {
     font-size: 24px;
     line-height: 36px;
     color: #333333;
+    width: 75%;
+    margin: auto;
   }
 
   .cards {
@@ -164,10 +167,21 @@ nav {
 
       span {
         color: #ffff;
-        background-color: #2d9cdb;
         padding: 15px;
         border-radius: 12px;
         font-size: 30px;
+      }
+
+      span.create {
+        background-color: #2d9cdb;
+      }
+
+      span.code {
+        background-color: #27ae60;
+      }
+
+      span.storage {
+        background-color: #eb5757;
       }
 
       h3 {
@@ -201,6 +215,49 @@ nav {
       button:hover {
         background-color: #2d9cdb;
         color: #ffff;
+      }
+    }
+  }
+}
+
+.our-works {
+  margin-top: 100px;
+  font-family: Poppins;
+  font-style: normal;
+
+  h2 {
+    margin: auto;
+    width: 80%;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+  }
+
+  .products {
+    margin-top: 48px;
+
+    .product {
+      margin-bottom: 36px;
+
+      img {
+        width: 100%;
+        border-radius: 24px;
+      }
+
+      p {
+        margin-top: 12px;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 18px;
+        color: #828282;
+      }
+
+      h3 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #333333;
       }
     }
   }
