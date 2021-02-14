@@ -6,7 +6,7 @@
 }
 
 body {
-  width: 94%;
+  width: 93%;
   margin: auto;
 }
 
@@ -82,6 +82,7 @@ nav span {
   margin-top: 22px;
   -ms-grid-column: 2;
   grid-column: 2;
+  width: 80%;
 }
 
 .home p {
@@ -164,11 +165,55 @@ nav span {
   margin-top: 92px;
 }
 
+.service .cards .card {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Poppins;
+  font-style: normal;
+  background-color: #ffff;
+  padding: 49px 34px;
+  border-radius: 24px;
+}
+
 .service .cards .card span {
   color: #ffff;
   background-color: #2d9cdb;
   padding: 15px;
   border-radius: 12px;
   font-size: 30px;
+}
+
+.service .cards .card h3 {
+  margin-top: 35px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}
+
+.service .cards .card p {
+  margin-top: 24px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4f4f4f;
+}
+
+.service .cards .card button {
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #828282;
+  padding: 9px 12px;
+  border-radius: 12px;
+  border: none;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.service .cards .card button:hover {
+  background-color: #2d9cdb;
+  color: #ffff;
 }
 /*# sourceMappingURL=style.css.map */
