@@ -3,6 +3,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -11,16 +12,24 @@
 }
 
 nav {
+  padding: 7px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+nav .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 14px;
 }
 
-nav h1 {
+nav .container h1 {
   font-family: Heebo;
   font-style: normal;
   font-weight: 800;
@@ -29,14 +38,28 @@ nav h1 {
   color: #333333;
 }
 
-nav span {
+nav .container span {
+  line-height: 35px;
   cursor: pointer;
+}
+
+nav .container ul {
+  display: none;
+}
+
+nav.scrolled {
+  background-color: #100e1d;
+}
+
+nav.scrolled .container h1,
+nav.scrolled .container span {
+  color: #ffff;
 }
 
 .home {
   font-family: Poppins;
   font-style: normal;
-  margin-top: 48px;
+  margin-top: 96px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 80% 1fr;
@@ -517,5 +540,58 @@ nav span {
   font-size: 14px;
   line-height: 17px;
   color: #a9a9a9;
+}
+
+.nav-menu {
+  background-color: #100e1d;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0px;
+}
+
+.nav-menu span {
+  color: #fff;
+  font-size: 40px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.nav-menu ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.nav-menu ul li {
+  margin-bottom: 30px;
+}
+
+.nav-menu ul li a {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 200%;
+  color: #ffff;
+  text-decoration: none;
+}
+
+.nav-menu.display-none {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
