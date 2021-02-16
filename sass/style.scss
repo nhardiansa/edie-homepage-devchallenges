@@ -551,3 +551,148 @@ nav.scrolled {
 .nav-menu.display-none {
   display: none;
 }
+
+// for Tablet version
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 93%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 80% 1fr;
+    grid-template-rows: repeat (auto, 1fr);
+  }
+
+  nav {
+    padding: 42px;
+
+    .container {
+      h1 {
+        font-size: 36px;
+      }
+      span {
+        display: none;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+        align-items: center;
+
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+
+        li {
+          a {
+            font-size: 24px;
+            line-height: 36px;
+            color: #333333;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  nav.scrolled {
+    padding: 18px;
+    .container {
+      ul {
+        li {
+          a {
+            color: #ffff;
+          }
+        }
+      }
+    }
+  }
+
+  .home {
+    grid-column: 1 / 4;
+    margin-top: 191px;
+    grid-template-columns: 1fr 40% 40% 1fr;
+
+    a {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    h2 {
+      font-size: 48px;
+      line-height: 72px;
+    }
+
+    img {
+      margin-top: 42px;
+      grid-column: 1 / 5;
+    }
+
+    h2:nth-child(4) {
+      // color: red;
+      margin-top: 42px;
+    }
+
+    p {
+      margin-top: 42px;
+      font-size: 18px;
+      line-height: 27px;
+      width: 70%;
+    }
+
+    form {
+      label {
+        font-size: 14px;
+        line-height: 21px;
+      }
+
+      .input {
+        margin-top: 9px;
+        input {
+          font-size: 18px;
+          line-height: 27px;
+          height: 57px;
+          width: 50%;
+        }
+
+        .button {
+          height: 57px;
+          button {
+            width: 94px;
+            height: 49px;
+            font-size: 18px;
+            line-height: 27px;
+          }
+        }
+      }
+    }
+  }
+
+  .service {
+    grid-column: 2 / 3;
+
+    h2 {
+      width: 25%;
+      margin: 0 auto 0 0;
+    }
+  }
+
+  .our-works {
+    grid-column: 2 / 3;
+  }
+
+  .team {
+    grid-column: 2 / 3;
+  }
+
+  .clients {
+    grid-column: 2 / 3;
+  }
+}
