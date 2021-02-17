@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  outline: none;
 }
 
 .container {
@@ -125,7 +126,6 @@ nav.scrolled {
       display: flex;
 
       input {
-        outline: none;
         width: 70%;
         font-size: 14px;
         line-height: 21px;
@@ -468,7 +468,6 @@ nav.scrolled {
     .input {
       display: flex;
       input {
-        outline: none;
         color: #bdbdbd;
         background: #f2f2f2;
         border-radius: 12px 0 0 12px;
